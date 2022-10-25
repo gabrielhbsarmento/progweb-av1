@@ -14,7 +14,7 @@ interface Game {
 }
 function App() {
   /**
-   * (2pt) Crie uma variável de estado com o nome 'games' e defina como inicialmente um array vazio
+   * (2pt) dflsdfl Crie uma variável de estado com o nome 'games' e defina como inicialmente um array vazio
    */
 
    const [game , setGame] = useState ([{}])
