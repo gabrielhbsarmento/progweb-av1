@@ -5,6 +5,7 @@ import GameBanner from './components/GameBanner'
 import './styles/main.css'
 import logo from './assets/logo-nlw-esports.svg'
 interface Game {
+  adsCount: number;
   id: string;
   title: string;
   bannerUrl: string;
@@ -17,7 +18,7 @@ function App() {
    * (2pt) Crie uma variável de estado com o nome 'games' e defina como inicialmente um array vazio
    */
 
-   const [game , setGame] = useState ([{}])
+   const [games , setGame] = useState ([])
    
 
   useEffect(() => {
@@ -47,25 +48,12 @@ function App() {
          *        - title: contem a string do titulo do jogo
          *        - adsCount: contém o número de ads de dentro de _count
          */
-         game && ( 
-          game.map((game, index) => (
-            <p key={index}>
-              {index} - {game}
-            </p>
-          ))
-        )
-
-      {
-        /**
-         * Remova o trecho abaixo quando inserir o conteúdo da resposta acima
-         */
+         games &&
+          games.map((games : Game)=>
+            <GameBanner key={games.id} bannerUrl={games.bannerUrl} title={games.title} adsCount={games._count.ads}/> ) 
       }
-      <GameBanner />
-      <GameBanner />
-      <GameBanner />
-      <GameBanner />
-      <GameBanner />
 
+    
     </div>
 
   </div>

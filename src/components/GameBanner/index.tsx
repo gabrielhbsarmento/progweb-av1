@@ -5,12 +5,12 @@
  */
 
  interface GameBannerProps {
- 
+  key: string;
   title: string;
   bannerUrl: string;
-  adscount : number
+  adsCount : number
 }
-export function GameBanner(props : GameBannerProps) {
+export function GameBanner(props:GameBannerProps) {
   return (<><a href="" className="relative rounded-lg overflow-hidden">
     <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="" />
 
