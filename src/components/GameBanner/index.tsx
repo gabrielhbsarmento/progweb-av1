@@ -1,7 +1,7 @@
 /**
  * (1pt) - Crie uma interface GameBannerProps com os três atributos passados vindos da das props
  * (2pt) - Use a interface como o tipo das props do componente e substitua os 
- *          atributos estáticos das imagem (src), titulo e contador de anuncios pelas respectivas props
+ *      s    atributos estáticos das imagem (src), titulo e contador de anuncios pelas respectivas props
  */
 
  interface GameBannerProps {
