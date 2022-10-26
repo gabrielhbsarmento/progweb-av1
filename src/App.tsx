@@ -52,7 +52,7 @@ function App() {
           games.map((games : Game)=>
             <GameBanner key={games.id} bannerUrl={games.bannerUrl} title={games.title} adsCount={games._count.ads}/> ) 
       }
-
+      
     
     </div>
 
