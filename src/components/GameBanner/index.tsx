@@ -10,7 +10,7 @@
   bannerUrl: string;
   adscount : number
 }
-export function GameBanner(_title: any,_bannerUrl: any,_adscount: any) {
+export function GameBanner(props : GameBannerProps) {
   return (<><a href="" className="relative rounded-lg overflow-hidden">
     <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="" />
 

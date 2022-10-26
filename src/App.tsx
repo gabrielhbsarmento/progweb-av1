@@ -47,7 +47,13 @@ function App() {
          *        - title: contem a string do titulo do jogo
          *        - adsCount: contém o número de ads de dentro de _count
          */
-      }
+         game && ( 
+          game.map((game, index) => (
+            <p key={index}>
+              {index} - {game}
+            </p>
+          ))
+        )
 
       {
         /**
